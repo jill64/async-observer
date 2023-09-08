@@ -1,6 +1,6 @@
 {
   "name": "@jill64/async-observer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "Make Promise state observable as a string",
   "main": "dist/index.js",
