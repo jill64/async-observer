@@ -1,0 +1,57 @@
+{
+  "name": "@jill64/async-observer",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Make Promise state observable as a string",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "author": "jill64 <intents.turrets0h@icloud.com> (https://github.com/jill64)",
+  "bugs": "https://github.com/jill64/async-observer/issues",
+  "homepage": "https://github.com/jill64/async-observer#readme",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "keywords": [
+    "promise",
+    "observe",
+    "svelte",
+    "store"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jill64/async-observer.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "pnpm build:lib && pnpm build:site && publint",
+    "build:lib": "cd packages/lib && pnpm build",
+    "build:site": "cd packages/site && pnpm build",
+    "check": "cd packages/site && pnpm check",
+    "test": "pnpm -r build && cd packages/site && pnpm test",
+    "format": "prettier --write . --plugin prettier-plugin-svelte .",
+    "lint": "prettier --check . --plugin prettier-plugin-svelte . && eslint ."
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.6.0",
+    "@typescript-eslint/parser": "^6.6.0",
+    "eslint": "^8.48.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-svelte": "^2.33.0",
+    "prettier": "^3.0.3",
+    "prettier-plugin-svelte": "^3.0.3",
+    "publint": "^0.2.2",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "is-promise": "^4.0.0",
+    "svelte": "^4.2.0"
+  }
+}
