@@ -13,10 +13,7 @@ export const observable = (options?: {
 
   let id = 0
 
-  const observed = <
-    T,
-    Fn extends (...args: (string & number & object)[]) => Promise<T>
-  >(
+  const observed = <T, Fn extends (...args: (string & number & object)[]) => T>(
     fn: Fn
   ) =>
     (async (...arg) => {
