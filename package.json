@@ -59,7 +59,6 @@
     "vite": "^4.4.9"
   },
   "dependencies": {
-    "is-promise": "^4.0.0",
     "svelte": "^4.2.0"
   }
 }
