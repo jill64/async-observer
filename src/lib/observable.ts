@@ -1,5 +1,5 @@
 import { writable } from 'svelte/store'
-import { PromiseStatus } from './PromiseStatus.js'
+import type { PromiseStatus } from './PromiseStatus'
 
 export const observable = (options?: {
   resolveToIdle?: number
