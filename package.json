@@ -31,11 +31,12 @@
     "access": "public"
   },
   "scripts": {
-    "build": "pnpm build:lib && pnpm build:site && publint",
-    "build:lib": "cd packages/lib && pnpm build",
-    "build:site": "cd packages/site && pnpm build",
-    "check": "cd packages/site && pnpm check",
-    "test": "pnpm -r build && cd packages/site && pnpm test",
+    "dev": "vite dev",
+    "build": "vite build && pnpm publish",
+    "preview": "pnpm build && vite preview",
+    "package": "svelte-kit sync && svelte-package && publint",
+    "test": "playwright test",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "format": "prettier --write . --plugin prettier-plugin-svelte .",
     "lint": "prettier --check . --plugin prettier-plugin-svelte . && eslint ."
   },
@@ -48,7 +49,13 @@
     "prettier": "^3.0.3",
     "prettier-plugin-svelte": "^3.0.3",
     "publint": "^0.2.2",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "@playwright/test": "^1.37.1",
+    "@sveltejs/adapter-auto": "^2.1.0",
+    "@sveltejs/kit": "^1.24.1",
+    "svelte-check": "^3.5.1",
+    "tslib": "^2.6.2",
+    "vite": "^4.4.9"
   },
   "dependencies": {
     "is-promise": "^4.0.0",

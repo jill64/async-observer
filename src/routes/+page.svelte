@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { observable } from '../../../../dist/index.js'
+  import { observable } from '$lib'
 
   const { status, observed } = observable()
 
