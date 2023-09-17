@@ -1,25 +1,86 @@
-import { test, expect } from '@playwright/test'
+import { expect, test } from 'vitest'
+import { observable } from '../src/index'
 
-test('toResolve', async ({ page }) => {
-  await page.goto('/')
+test('toResolve', async () => {
+  const { status, observed } = observable({
+    rejectToIdle: 100,
+    resolveToIdle: 100
+  })
 
-  await expect(page.getByText('IDLE')).toBeVisible()
+  const run = observed(
+    () =>
+      new Promise((resolve) => {
+        setTimeout(resolve, 1000)
+      })
+  )
 
-  await page.getByRole('button', { name: 'toResolve' }).click()
+  let str = ''
 
-  await expect(page.getByText('PENDING')).toBeVisible()
-  await expect(page.getByText('FULFILLED')).toBeVisible()
-  await expect(page.getByText('IDLE')).toBeVisible()
+  status.subscribe((status) => {
+    str = status
+  })
+
+  expect(str).toBe('IDLE')
+
+  run()
+
+  expect(str).toBe('PENDING')
+
+  await new Promise<void>((resolve) => {
+    status.subscribe((status) => {
+      if (status === 'FULFILLED') {
+        resolve()
+      }
+    })
+  })
+
+  await new Promise<void>((resolve) => {
+    status.subscribe((status) => {
+      if (status === 'IDLE') {
+        resolve()
+      }
+    })
+  })
 })
 
-test('toThrow', async ({ page }) => {
-  await page.goto('/')
+test('toThrow', async () => {
+  const { status, observed } = observable({
+    rejectToIdle: 100,
+    resolveToIdle: 100
+  })
 
-  await expect(page.getByText('IDLE')).toBeVisible()
+  const run = observed(
+    () =>
+      new Promise((_, reject) => {
+        setTimeout(reject, 1000)
+      })
+  )
 
-  await page.getByRole('button', { name: 'toThrow' }).click()
+  let str = ''
 
-  await expect(page.getByText('PENDING')).toBeVisible()
-  await expect(page.getByText('REJECTED')).toBeVisible()
-  await expect(page.getByText('IDLE')).toBeVisible()
+  status.subscribe((status) => {
+    str = status
+  })
+
+  expect(str).toBe('IDLE')
+
+  run().catch(() => {})
+
+  expect(str).toBe('PENDING')
+
+  await new Promise<void>((resolve) => {
+    status.subscribe((status) => {
+      if (status === 'REJECTED') {
+        resolve()
+      }
+    })
+  })
+
+  await new Promise<void>((resolve) => {
+    status.subscribe((status) => {
+      if (status === 'IDLE') {
+        resolve()
+      }
+    })
+  })
 })
