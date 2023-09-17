@@ -1,5 +1,7 @@
 # async-observer
 
+![github-actions-ci](https://github.com/jill64/async-observer/actions/workflows/ci.yml/badge.svg)
+
 Make Promise state observable as a string
 
 ## Install
