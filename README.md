@@ -1,6 +1,7 @@
 # async-observer
 
 ![github-actions-ci](https://github.com/jill64/async-observer/actions/workflows/ci.yml/badge.svg)
+[![codecov](https://codecov.io/github/jill64/async-observer/graph/badge.svg?token=YKG2OJ1SXP)](https://codecov.io/github/jill64/async-observer)
 
 Make Promise state observable as a string
 
