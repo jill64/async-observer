@@ -2,7 +2,15 @@ import { writable } from 'svelte/store'
 import type { PromiseStatus } from './PromiseStatus'
 
 export const observable = (options?: {
+  /**
+   * Time in ms to wait before setting the status to IDLE after a promise is resolved
+   * @default 5000
+   */
   resolveToIdle?: number
+  /**
+   * Time in ms to wait before setting the status to IDLE after a promise is rejected
+   * @default 5000
+   */
   rejectToIdle?: number
 }) => {
   const { resolveToIdle = 5000, rejectToIdle = 5000 } = options ?? {}
