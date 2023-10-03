@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   svelte:
-    specifier: 4.2.0
-    version: 4.2.0
+    specifier: 4.2.1
+    version: 4.2.1
 
 devDependencies:
   '@typescript-eslint/eslint-plugin':
@@ -2275,10 +2275,10 @@ packages:
       has-flag: 4.0.0
     dev: true
 
-  /svelte@4.2.0:
+  /svelte@4.2.1:
     resolution:
       {
-        integrity: sha512-kVsdPjDbLrv74SmLSUzAsBGquMs4MPgWGkGLpH+PjOYnFOziAvENVzgJmyOCV2gntxE32aNm8/sqNKD6LbIpeQ==
+        integrity: sha512-LpLqY2Jr7cRxkrTc796/AaaoMLF/1ax7cto8Ot76wrvKQhrPmZ0JgajiWPmg9mTSDqO16SSLiD17r9MsvAPTmw==
       }
     engines: { node: '>=16' }
     dependencies:
