@@ -1,7 +1,6 @@
 # async-observer
 
 [![npm](https://img.shields.io/npm/v/%40jill64%2Fasync-observer)](https://npmjs.com/package/@jill64/async-observer)
-[![CI](https://github.com/jill64/async-observer/actions/workflows/ci.yml/badge.svg)](https://github.com/jill64/async-observer/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/github/jill64/async-observer/graph/badge.svg?token=YKG2OJ1SXP)](https://codecov.io/github/jill64/async-observer)
 
 Make Promise state observable as a string
