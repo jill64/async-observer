@@ -1,5 +1,5 @@
 import { writable } from 'svelte/store'
-import type { PromiseStatus } from './PromiseStatus.js'
+import type { PromiseStatus } from './types/PromiseStatus.js'
 
 export const observable = (options?: {
   /**

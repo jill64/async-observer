@@ -1,2 +1,2 @@
 export { observable } from './observable.js'
-export type { PromiseStatus } from './PromiseStatus.js'
+export type { PromiseStatus } from './types/PromiseStatus.js'
