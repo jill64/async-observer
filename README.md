@@ -1,4 +1,4 @@
-# @jill64/async-observer
+# async-observer
 
 [![npm](https://img.shields.io/npm/v/%40jill64%2Fasync-observer)](https://npmjs.com/package/@jill64/async-observer)
 [![npm](https://img.shields.io/npm/l/%40jill64%2Fasync-observer)](https://npmjs.com/package/@jill64/async-observer)
