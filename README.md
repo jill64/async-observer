@@ -52,7 +52,6 @@ run()
 
 ## Compatibility for svelte store
 
-
 Since `status` is implemented according to svelte store, it can be used in svelte applications as follows
 
 ```svelte
