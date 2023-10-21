@@ -17,12 +17,6 @@
       "default": "./dist/index.js"
     }
   },
-  "keywords": [
-    "promise",
-    "observe",
-    "svelte",
-    "store"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/async-observer.git"
