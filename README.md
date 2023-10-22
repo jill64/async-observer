@@ -1,10 +1,12 @@
+<!----- BEGIN GHOST DOCS HEADER ----->
+
 # async-observer
 
-[![npm](https://img.shields.io/npm/v/%40jill64%2Fasync-observer)](https://npmjs.com/package/@jill64/async-observer)
-[![npm](https://img.shields.io/npm/l/%40jill64%2Fasync-observer)](https://npmjs.com/package/@jill64/async-observer)
-[![codecov](https://codecov.io/github/jill64/async-observer/graph/badge.svg?token=YKG2OJ1SXP)](https://codecov.io/github/jill64/async-observer)
+[![npm-version](https://img.shields.io/npm/v/@jill64/async-observer)](https://npmjs.com/package/@jill64/async-observer) [![npm-license](https://img.shields.io/npm/l/@jill64/async-observer)](https://npmjs.com/package/@jill64/async-observer) [![npm-download-month](https://img.shields.io/npm/dm/@jill64/async-observer)](https://npmjs.com/package/@jill64/async-observer) [![npm-min-size](https://img.shields.io/bundlephobia/min/@jill64/async-observer)](https://npmjs.com/package/@jill64/async-observer) [![codecov-coverage](https://codecov.io/gh/jill64/async-observer/graph/badge.svg)](https://codecov.io/gh/jill64/async-observer)
 
 Make Promise state observable as a string
+
+<!----- END GHOST DOCS HEADER ----->
 
 ## Installation
 
