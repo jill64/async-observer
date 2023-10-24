@@ -24,6 +24,13 @@
   "publishConfig": {
     "access": "public"
   },
+  "keywords": [
+    "promise",
+    "state",
+    "observe",
+    "svelte",
+    "store"
+  ],
   "scripts": {
     "build": "tsc && npx publint",
     "test": "vitest run --coverage",
