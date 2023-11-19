@@ -1,13 +1,14 @@
-import { writable } from 'svelte/store'
-import type { PromiseStatus } from './types/PromiseStatus.js'
+import type { Readable } from 'svelte/store'
 import type { Options } from './types/Options.js'
+import type { PromiseStatus } from './types/PromiseStatus.js'
+import { writable } from './writable.js'
 
 export const observable = (options?: Options) => {
   const { resolveToIdle = 5000, rejectToIdle = 5000 } = options ?? {}
 
   const { subscribe, set } = writable<PromiseStatus>('IDLE')
 
-  const status = { subscribe }
+  const status = { subscribe } satisfies Readable<PromiseStatus>
 
   let id = 0
 

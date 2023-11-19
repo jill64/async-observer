@@ -1,6 +1,6 @@
 {
   "name": "@jill64/async-observer",
-  "version": "1.1.4",
+  "version": "1.2.0",
   "type": "module",
   "description": "🔭 Make Promise state observable as a string",
   "main": "dist/index.js",
@@ -43,9 +43,7 @@
     "@typescript-eslint/parser": "6.11.0",
     "eslint-plugin-deprecation": "2.0.0",
     "typescript": "5.2.2",
+    "svelte": "4.2.5",
     "vitest": "0.34.6"
-  },
-  "dependencies": {
-    "svelte": "4.2.5"
   }
 }
