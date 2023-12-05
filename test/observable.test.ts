@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest'
-import { observable } from './index.js'
+import { observable } from '../src/index.js'
 
 test('toResolve', async () => {
   const { status, observed } = observable({
