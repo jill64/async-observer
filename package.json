@@ -27,6 +27,7 @@
   "keywords": [
     "oberservable",
     "promise",
+    "svelte",
     "utility"
   ],
   "scripts": {
