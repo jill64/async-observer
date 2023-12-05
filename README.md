@@ -6,12 +6,6 @@
 
 🔭 Make Promise state observable as a string
 
-## Installation
-
-```sh
-npm i @jill64/async-observer
-```
-
 <!----- END GHOST DOCS HEADER ----->
 
 ## Example
