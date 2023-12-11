@@ -2,7 +2,7 @@
 
 # async-observer
 
-[![npm-version](https://img.shields.io/npm/v/@jill64/async-observer)](https://npmjs.com/package/@jill64/async-observer) [![npm-license](https://img.shields.io/npm/l/@jill64/async-observer)](https://npmjs.com/package/@jill64/async-observer) [![npm-download-month](https://img.shields.io/npm/dm/@jill64/async-observer)](https://npmjs.com/package/@jill64/async-observer) [![npm-min-size](https://img.shields.io/bundlephobia/min/@jill64/async-observer)](https://npmjs.com/package/@jill64/async-observer) [![ci.yml](https://github.com/jill64/async-observer/actions/workflows/ci.yml/badge.svg)](https://github.com/jill64/async-observer/actions/workflows/ci.yml) [![codecov-coverage](https://codecov.io/gh/jill64/async-observer/graph/badge.svg)](https://codecov.io/gh/jill64/async-observer)
+<!----- BEGIN GHOST DOCS BADGES -----><a href="https://npmjs.com/package/@jill64/async-observer"><img src="https://img.shields.io/npm/v/@jill64/async-observer" alt="npm-version" /></a> <a href="https://npmjs.com/package/@jill64/async-observer"><img src="https://img.shields.io/npm/l/@jill64/async-observer" alt="npm-license" /></a> <a href="https://npmjs.com/package/@jill64/async-observer"><img src="https://img.shields.io/npm/dm/@jill64/async-observer" alt="npm-download-month" /></a> <a href="https://npmjs.com/package/@jill64/async-observer"><img src="https://img.shields.io/bundlephobia/min/@jill64/async-observer" alt="npm-min-size" /></a> <a href="https://github.com/jill64/async-observer/actions/workflows/ci.yml"><img src="https://github.com/jill64/async-observer/actions/workflows/ci.yml/badge.svg" alt="ci.yml" /></a><!----- END GHOST DOCS BADGES ----->
 
 🔭 Make Promise state observable as a string
 
