@@ -65,3 +65,11 @@ Since `status` is implemented according to svelte store, it can be used in svelt
 
 <div>{$status}</div>
 ```
+
+<!----- BEGIN GHOST DOCS FOOTER ----->
+
+## License
+
+MIT
+
+<!----- END GHOST DOCS FOOTER ----->
