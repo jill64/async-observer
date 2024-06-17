@@ -1,6 +1,6 @@
 {
   "name": "@jill64/async-observer",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "type": "module",
   "description": "🔭 Make Promise state observable as a string",
   "main": "dist/index.js",
@@ -25,7 +25,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/async-observer.git",
-    "image": "https://opengraph.githubassets.com/8dd5da53fbc7124ca89bafc1ce236c83547bc24875629b5ac955d84c817ab468/jill64/async-observer"
+    "image": "https://opengraph.githubassets.com/cb8c77113ea92fa29c7ba8fb17cea745693aeb209f76eba328e42900052be93d/jill64/async-observer"
   },
   "publishConfig": {
     "access": "public"
@@ -45,7 +45,7 @@
   },
   "prettier": "@jill64/prettier-config",
   "devDependencies": {
-    "@jill64/eslint-config-ts": "1.1.25",
+    "@jill64/eslint-config-ts": "1.1.26",
     "@jill64/prettier-config": "1.0.0",
     "typescript": "5.4.5",
     "svelte": "4.2.18",
