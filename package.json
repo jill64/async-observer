@@ -25,7 +25,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/async-observer.git",
-    "image": "https://opengraph.githubassets.com/15cb8845666beccb452857e291ec02ba3f722b15b07716c6d872d62385f1fb7e/jill64/async-observer"
+    "image": "https://opengraph.githubassets.com/3f1f67c9c39e39309d6968d28df1f74ad84f384cb38fabd7d1a5efc16e12273e/jill64/async-observer"
   },
   "publishConfig": {
     "access": "public"
@@ -45,7 +45,7 @@
   },
   "prettier": "@jill64/prettier-config",
   "devDependencies": {
-    "@jill64/eslint-config-ts": "1.1.28",
+    "@jill64/eslint-config-ts": "1.1.29",
     "@jill64/prettier-config": "1.0.0",
     "typescript": "5.5.3",
     "svelte": "4.2.18",
