@@ -8,7 +8,7 @@
 
 <!----- END GHOST DOCS BADGES ----->
 
-🔭 Make Promise state observable as a string
+🔭 Make Promise state observable as a string for svelte
 
 <!----- END GHOST DOCS HEADER ----->
 
