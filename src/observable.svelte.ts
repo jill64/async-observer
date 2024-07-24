@@ -1,14 +1,17 @@
-import type { Readable } from 'svelte/store'
 import type { Options } from './types/Options.js'
 import type { PromiseStatus } from './types/PromiseStatus.js'
-import { writable } from './writable.js'
 
-export const observable = (options?: Options) => {
+export const observable = (
+  options?: Options
+): {
+  status: PromiseStatus
+  observed: <T, Fn extends (...args: (string & number & object)[]) => T>(
+    fn: Fn
+  ) => Fn
+} => {
   const { resolveToIdle = 5000, rejectToIdle = 5000 } = options ?? {}
 
-  const { subscribe, set } = writable<PromiseStatus>('IDLE')
-
-  const status = { subscribe } satisfies Readable<PromiseStatus>
+  let status = $state<PromiseStatus>('IDLE')
 
   let id = 0
 
@@ -20,13 +23,13 @@ export const observable = (options?: Options) => {
 
       const localId = id
 
-      const setStatus = (status: PromiseStatus) => {
+      const setStatus = (val: PromiseStatus) => {
         if (localId === id) {
-          set(status)
+          status = val
         }
       }
 
-      set('PENDING')
+      status = 'PENDING'
 
       try {
         const res = await fn(...arg)

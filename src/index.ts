@@ -1,2 +1,2 @@
-export { observable } from './observable.js'
+export { observable } from './observable.svelte.js'
 export type { PromiseStatus } from './types/PromiseStatus.js'
