@@ -1,13 +1,9 @@
 {
+  "extends": "./.svelte-kit/tsconfig.json",
   "compilerOptions": {
     "allowJs": true,
     "checkJs": true,
-    "outDir": "dist",
     "strict": true,
-    "declaration": true,
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "types": ["svelte"]
-  },
-  "include": ["src"]
+    "moduleResolution": "Bundler"
+  }
 }

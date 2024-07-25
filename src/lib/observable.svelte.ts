@@ -47,7 +47,9 @@ export const observable = (
     }) as Fn
 
   return {
-    status,
+    get status() {
+      return status
+    },
     observed
   }
 }
