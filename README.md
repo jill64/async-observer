@@ -18,16 +18,16 @@
 <script>
   import { observable } from '@jill64/async-observer'
 
-  let { status, observed } = observable()
+  let observer = observable()
 
-  let set = observed(async () => {
+  let set = observer.observed(async () => {
     await yourAsyncFunction()
   })
 </script>
 
 <button onclick={set}>Button</button>
 
-<div>{status}</div>
+<div>{observer.status}</div>
 ```
 
 <!----- BEGIN GHOST DOCS FOOTER ----->
