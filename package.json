@@ -2,7 +2,7 @@
   "name": "@jill64/async-observer",
   "version": "1.2.5",
   "type": "module",
-  "description": "🔭 Make Promise state observable as a string",
+  "description": "🔭 Make Promise state observable as a string for svelte",
   "main": "dist/index.js",
   "license": "MIT",
   "author": {
@@ -25,7 +25,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/async-observer.git",
-    "image": "https://opengraph.githubassets.com/0a41251d6576f081c3839df3de8313c871f87530347b96c1f1a674cb80acb810/jill64/async-observer"
+    "image": "https://opengraph.githubassets.com/6aeea0de41857d31f91a5d272957c7a9a6456d6f286d724c30b616981847ed22/jill64/async-observer"
   },
   "publishConfig": {
     "access": "public"
