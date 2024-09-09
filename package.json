@@ -25,7 +25,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/async-observer.git",
-    "image": "https://opengraph.githubassets.com/e1962e5e5f897bf08d020947124c4e14f047c62fc4c5839cee8da6eb86afde96/jill64/async-observer"
+    "image": "https://opengraph.githubassets.com/90f4d13999ca96f7e5345443e173cdc79952fe8c36de55b7ac414594533e676b/jill64/async-observer"
   },
   "publishConfig": {
     "access": "public"
