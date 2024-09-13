@@ -25,7 +25,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/async-observer.git",
-    "image": "https://opengraph.githubassets.com/3c558e566fd11ab4a9eb63434bce63a3fe00a093677547cbf4de996c18247250/jill64/async-observer"
+    "image": "https://opengraph.githubassets.com/5380f6c4a7865479af2aded70ae771ab19b5bd1e60c415e1edc08c54c803a247/jill64/async-observer"
   },
   "publishConfig": {
     "access": "public"
@@ -49,6 +49,6 @@
     "@jill64/prettier-config": "1.0.0",
     "typescript": "5.6.2",
     "svelte": "4.2.19",
-    "vitest": "2.1.0"
+    "vitest": "2.1.1"
   }
 }
