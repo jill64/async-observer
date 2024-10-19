@@ -48,7 +48,7 @@
     "@jill64/eslint-config-ts": "1.1.46",
     "@jill64/prettier-config": "1.0.0",
     "typescript": "5.6.3",
-    "svelte": "4.2.19",
+    "svelte": "5.0.0",
     "vitest": "2.1.3"
   }
 }
